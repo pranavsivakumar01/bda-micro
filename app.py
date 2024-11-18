@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-file_path = r'C:\Users\Pranav sivakumar\Desktop\bdamicro\datasets\NikeProductDescriptions.csv'
+file_path = r'datasets/NikeProductDescriptions.csv'
 data = pd.read_csv(file_path)
 
 @app.route('/search', methods=['POST'])
